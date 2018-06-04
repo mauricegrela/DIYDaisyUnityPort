@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 821cb7dc6c1c9664b9bc61b0644a337e
-timeCreated: 1527949142
+timeCreated: 1528153982
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MapleLeaf_stickers_0
+    21300002: MapleLeaf_stickers_1
+    21300004: MapleLeaf_stickers_2
+    21300006: MapleLeaf_stickers_3
+    21300008: MapleLeaf_stickers_4
+    21300010: MapleLeaf_stickers_5
+    21300012: MapleLeaf_stickers_6
+    21300014: MapleLeaf_stickers_7
+    21300016: MapleLeaf_stickers_8
+    21300018: MapleLeaf_stickers_9
+    21300020: MapleLeaf_stickers_10
+    21300022: MapleLeaf_stickers_11
+    21300024: MapleLeaf_stickers_12
+    21300026: MapleLeaf_stickers_13
+    21300028: MapleLeaf_stickers_14
+    21300030: MapleLeaf_stickers_15
+    21300032: MapleLeaf_stickers_16
+    21300034: MapleLeaf_stickers_17
+    21300036: MapleLeaf_stickers_18
+    21300038: MapleLeaf_stickers_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,9 +83,313 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 500
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 500
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 500
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 375
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_6
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 375
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_7
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 375
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 250
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_10
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 250
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_11
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 250
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_13
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 125
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 125
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 125
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_17
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_18
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapleLeaf_stickers_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 182.5
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
