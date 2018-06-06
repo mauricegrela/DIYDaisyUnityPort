@@ -15,6 +15,7 @@ public class CharacterCreationScript : MonoBehaviour {
     private Vector3 offset;
     public GameObject Test;
     private Sprite BodySpriteRef;
+    Color TurnedOff = new Color(0,0,0,0);
     // Use this for initialization
     void Start () {
 		
@@ -44,7 +45,8 @@ public class CharacterCreationScript : MonoBehaviour {
 
                 foreach (Transform child in CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[i].transform)
                 {
-                    child.gameObject.GetComponent<Button>().interactable = true;
+                    child.gameObject.GetComponent<Image>().color = Color.white;
+                    //child.gameObject.GetComponent<Button>().interactable = true;
                 }
 
                 if (CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[i].gameObject.name != "Sticker Set One")
@@ -60,15 +62,19 @@ public class CharacterCreationScript : MonoBehaviour {
 
             foreach (Transform child in SelectedObject.transform)
             {
-                if (child.gameObject.name == "Body")
+                if (child.gameObject.name != "Body")
                 {
-                    BodySpriteRef = child.gameObject.GetComponent<Image>().sprite;
+                child.gameObject.GetComponent<Image>().color = TurnedOff;
                 }
             }
 
             foreach (Transform child in SelectedObject.transform)
             {
-                child.gameObject.GetComponent<Image>().sprite = BodySpriteRef;
+                //child.gameObject.GetComponent<Image>().sprite = BodySpriteRef;
+                if (child.gameObject.name != "Body")
+                {
+                    child.gameObject.GetComponent<Image>().color = TurnedOff;
+                }
             }
 
             SelectedObject.gameObject.tag = "Untagged";
@@ -85,9 +91,10 @@ public class CharacterCreationScript : MonoBehaviour {
 
             for (int i = 0; i < CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets.Length; i++)
             {
-                                foreach (Transform child in CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[i].transform)
+                foreach (Transform child in CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[i].transform)
                 {
-                    child.gameObject.GetComponent<Button>().interactable = true;
+                    child.gameObject.GetComponent<Image>().color = Color.white;
+                    //child.gameObject.GetComponent<Button>().interactable = true;
                 }
 
                 if (CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[i].gameObject.name != "Sticker Set One")
@@ -111,7 +118,11 @@ public class CharacterCreationScript : MonoBehaviour {
 
             foreach (Transform child in SelectedObject.transform)
             {
-                child.gameObject.GetComponent<Image>().sprite = BodySpriteRef;
+                //child.gameObject.GetComponent<Image>().sprite = BodySpriteRef;
+                if (child.gameObject.name != "Body")
+                {
+                child.gameObject.GetComponent<Image>().color = TurnedOff;
+                }
             }
 
             SelectedObject.gameObject.tag = "Untagged";

@@ -16,6 +16,7 @@ public class ImageClickScript : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         CharacterSheet.GetComponent<Image>().enabled = true;
         ClickDragScriptRef.CharacterClickAndDrag(CharacterSheet.GetComponent<RectTransform>());
         CharacterSheet.GetComponent<Image>().sprite = SpriteToSet;
+        CharacterSheet.GetComponent<Image>().color = Color.white;
         GetComponent<Image>().color = Sellected;
         //Debug.Log("PointerDown");
     }
