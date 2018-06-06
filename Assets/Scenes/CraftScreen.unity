@@ -5054,7 +5054,7 @@ GameObject:
   - component: {fileID: 404036390}
   - component: {fileID: 404036392}
   - component: {fileID: 404036391}
-  - component: {fileID: 404036393}
+  - component: {fileID: 404036394}
   m_Layer: 5
   m_Name: StickerThree
   m_TagString: Untagged
@@ -5113,7 +5113,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 404036389}
---- !u!114 &404036393
+--- !u!114 &404036394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5121,84 +5121,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 404036389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 404036391}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 565970070}
-        m_MethodName: CharacterClickAndDrag
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1277297379}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: faeff2af8ed917143bfe9a090cfef9ad,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 404036393}
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  CharacterSheet: {fileID: 1277297376}
+  ClickDragScriptRef: {fileID: 565970070}
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
+  SpriteToSet: {fileID: 21300000, guid: 13ab6983077ecc84bb1c7694fbfda456, type: 3}
+  BodyLocation: {fileID: 1251054195}
 --- !u!1 &429546064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,6 +7304,7 @@ GameObject:
   - component: {fileID: 591392566}
   - component: {fileID: 591392565}
   - component: {fileID: 591392567}
+  - component: {fileID: 591392568}
   m_Layer: 5
   m_Name: StickerOne
   m_TagString: Untagged
@@ -7518,6 +7449,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &591392568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591392563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSheet: {fileID: 0}
+  ClickDragScriptRef: {fileID: 0}
+  Sellected: {r: 0, g: 0, b: 0, a: 0}
+  SpriteToSet: {fileID: 0}
+  BodyLocation: {fileID: 0}
 --- !u!1 &598074132
 GameObject:
   m_ObjectHideFlags: 0
@@ -14251,7 +14198,7 @@ GameObject:
   - component: {fileID: 1148487869}
   - component: {fileID: 1148487871}
   - component: {fileID: 1148487870}
-  - component: {fileID: 1148487872}
+  - component: {fileID: 1148487873}
   m_Layer: 5
   m_Name: StickerOne
   m_TagString: Untagged
@@ -14310,7 +14257,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1148487868}
---- !u!114 &1148487872
+--- !u!114 &1148487873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -14318,84 +14265,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148487868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1148487870}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 565970070}
-        m_MethodName: CharacterClickAndDrag
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1277297379}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 85e4a861d0bdb934a9f0e6427f3dbad8,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1148487872}
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  CharacterSheet: {fileID: 1277297376}
+  ClickDragScriptRef: {fileID: 565970070}
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
+  SpriteToSet: {fileID: 21300000, guid: 85e4a861d0bdb934a9f0e6427f3dbad8, type: 3}
+  BodyLocation: {fileID: 1251054195}
 --- !u!1 &1150237027
 GameObject:
   m_ObjectHideFlags: 0
@@ -14406,7 +14283,7 @@ GameObject:
   - component: {fileID: 1150237028}
   - component: {fileID: 1150237030}
   - component: {fileID: 1150237029}
-  - component: {fileID: 1150237031}
+  - component: {fileID: 1150237032}
   m_Layer: 5
   m_Name: StickerTwo
   m_TagString: Untagged
@@ -14465,7 +14342,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1150237027}
---- !u!114 &1150237031
+--- !u!114 &1150237032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -14473,84 +14350,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150237027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1150237029}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 565970070}
-        m_MethodName: CharacterClickAndDrag
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1277297379}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 0b0e5d194f27b824ebb2963ab8828cc9,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1150237031}
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  CharacterSheet: {fileID: 1277297376}
+  ClickDragScriptRef: {fileID: 565970070}
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
+  SpriteToSet: {fileID: 21300000, guid: 0b0e5d194f27b824ebb2963ab8828cc9, type: 3}
+  BodyLocation: {fileID: 1251054195}
 --- !u!1 &1162721933
 GameObject:
   m_ObjectHideFlags: 0
@@ -14785,6 +14592,7 @@ GameObject:
   - component: {fileID: 1180147522}
   - component: {fileID: 1180147521}
   - component: {fileID: 1180147523}
+  - component: {fileID: 1180147524}
   m_Layer: 5
   m_Name: StickerFour
   m_TagString: Untagged
@@ -14929,6 +14737,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1180147524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180147519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSheet: {fileID: 0}
+  ClickDragScriptRef: {fileID: 0}
+  Sellected: {r: 0, g: 0, b: 0, a: 0}
+  SpriteToSet: {fileID: 0}
+  BodyLocation: {fileID: 0}
 --- !u!1 &1186842960
 GameObject:
   m_ObjectHideFlags: 0
@@ -16013,7 +15837,7 @@ GameObject:
   - component: {fileID: 1258168865}
   - component: {fileID: 1258168867}
   - component: {fileID: 1258168866}
-  - component: {fileID: 1258168868}
+  - component: {fileID: 1258168869}
   m_Layer: 5
   m_Name: StickerFour
   m_TagString: Untagged
@@ -16072,7 +15896,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258168864}
---- !u!114 &1258168868
+--- !u!114 &1258168869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -16080,84 +15904,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258168864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1258168866}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 565970070}
-        m_MethodName: CharacterClickAndDrag
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1277297379}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1277297377}
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 08b40c9e98d5ed44590117e8ee61e4ff,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1258168868}
-        m_MethodName: set_interactable
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  CharacterSheet: {fileID: 1277297376}
+  ClickDragScriptRef: {fileID: 565970070}
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
+  SpriteToSet: {fileID: 21300000, guid: 08b40c9e98d5ed44590117e8ee61e4ff, type: 3}
+  BodyLocation: {fileID: 1251054195}
 --- !u!1 &1261627789
 GameObject:
   m_ObjectHideFlags: 0
@@ -17150,6 +16904,7 @@ GameObject:
   - component: {fileID: 1320390998}
   - component: {fileID: 1320390997}
   - component: {fileID: 1320390999}
+  - component: {fileID: 1320391000}
   m_Layer: 5
   m_Name: StickerTwo
   m_TagString: Untagged
@@ -17294,6 +17049,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1320391000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1320390995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSheet: {fileID: 0}
+  ClickDragScriptRef: {fileID: 0}
+  Sellected: {r: 0, g: 0, b: 0, a: 0}
+  SpriteToSet: {fileID: 0}
+  BodyLocation: {fileID: 0}
 --- !u!1 &1326903004
 GameObject:
   m_ObjectHideFlags: 0
@@ -21843,6 +21614,7 @@ GameObject:
   - component: {fileID: 1684991263}
   - component: {fileID: 1684991262}
   - component: {fileID: 1684991264}
+  - component: {fileID: 1684991265}
   m_Layer: 5
   m_Name: StickerThree
   m_TagString: Untagged
@@ -21987,6 +21759,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1684991265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684991260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21cf19239616c2b49abb8d4b4b6f759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSheet: {fileID: 0}
+  ClickDragScriptRef: {fileID: 0}
+  Sellected: {r: 0, g: 0, b: 0, a: 0}
+  SpriteToSet: {fileID: 0}
+  BodyLocation: {fileID: 0}
 --- !u!1 &1703690705
 GameObject:
   m_ObjectHideFlags: 0
@@ -23917,7 +23705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

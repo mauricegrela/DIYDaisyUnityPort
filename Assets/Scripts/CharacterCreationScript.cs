@@ -24,28 +24,12 @@ public class CharacterCreationScript : MonoBehaviour {
 	void Update () {
 		if(isClickDragging == true)
         {
-
+            SelectedSticker.transform.position = Input.mousePosition;
             //SelectedSticker.position.x= Input.mousePosition.x;
-           // SelectedStickerposition.y  = Input.mousePosition.y;
+            // SelectedStickerposition.y  = Input.mousePosition.y;
         }
 	}
 
-    void OnMouseDown()
-    {
-        if (isClickDragging == true)
-        {
-        offset = SelectedSticker.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f));
-        }
-    }
-
-    void OnMouseDrag()
-    {
-        if (isClickDragging == true)
-        {
-            Vector3 newPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f);
-            SelectedSticker.position = Camera.main.ScreenToWorldPoint(newPosition) + offset;
-        }
-    }
 
     public void DeactivateCharacter()
     {
@@ -173,12 +157,17 @@ public class CharacterCreationScript : MonoBehaviour {
     {
         isClickDragging = true;
         SelectedSticker = TargetSticker;
-        foreach (Transform child in CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].transform)
-        {
-            child.gameObject.GetComponent<Button>().interactable = true;
-            //Debug.Log(child.gameObject.GetComponent<Button>().enabled);
+            foreach (Transform child in CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].transform)
+            {
+            //child.gameObject.GetComponent<Button>().interactable = true;
+            child.gameObject.GetComponent<Image>().color = Color.white;
         }
-        //CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(true);
+
+    }
+
+    public void CharacterClickAndDragEnd()
+    {
+        isClickDragging = false;
     }
 
     public void ChangeLevel(string Level)
