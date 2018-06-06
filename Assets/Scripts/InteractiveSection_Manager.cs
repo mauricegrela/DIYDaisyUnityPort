@@ -25,7 +25,6 @@ public class InteractiveSection_Manager : MonoBehaviour {
     void Start()
     {
         button = gameObject.GetComponent<RectTransform>();
-        //canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
         startingPosition = transform.position;
         speed = -10f;
     }
@@ -34,8 +33,6 @@ public class InteractiveSection_Manager : MonoBehaviour {
     {
         if(isMoving == true)
         {
-            //float offset = (Time.time * speed)*inverter;
-            //canvas[0].GetComponent<Image>().material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
             InteraciveClone.transform.rotation = Quaternion.Euler(0, 0, -45 * inverter);
             if (canvas[0].transform.position.x >= 2830)
             {
@@ -57,15 +54,11 @@ public class InteractiveSection_Manager : MonoBehaviour {
                 canvas[i].transform.Translate(speed * inverter, 0f, 0f);
             }
         }
-        else
-        {
-           // transform.position = Input.mousePosition;
-
+            else
+            {
             InteraciveClone.transform.position = Input.mousePosition;
             InteraciveClone.transform.rotation = new Quaternion(0, 0, 0, 0);
-            //Debug.Log(normalizedPoint);
-        }
-        //canvas.transform.Translate(speed, 0f, 0f);
+            }
     }
 
     public void ResetPosition ()
