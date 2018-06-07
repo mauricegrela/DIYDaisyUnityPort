@@ -32,7 +32,9 @@ public class CharacterCreationScript : MonoBehaviour {
 	}
 
 
-    public void DeactivateCharacter()
+
+
+        public void DeactivateCharacter()
     {
 
         if (CurrentCharacter != null)

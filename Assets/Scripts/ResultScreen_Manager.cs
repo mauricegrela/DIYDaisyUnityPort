@@ -19,11 +19,19 @@ public class ResultScreen_Manager : MonoBehaviour {
         SelecedStickerRef = GameObject.FindGameObjectWithTag("SelectedSticker");
         Instance = Instantiate(SelecedStickerRef, Clone_Position.position, SelecedStickerRef.transform.rotation);
         //Instance.transform.SetParent(gameObject.transform);// = gameObject.transform;
-        Instance.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        Instance.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         Instance.transform.position = Clone_Position.position;
         Instance.transform.SetParent(gameObject.transform, true);// = gameObject.transform;
         Instance.tag = "ClonedSticker";
     }
+
+    public void DeactivateCharacterFromResult()
+    {
+        GameObject SelectedObject;
+        SelectedObject = GameObject.FindGameObjectWithTag("ClonedSticker");
+        Destroy(SelectedObject);
+    }
+
 
 
     public void InteractiveCloneSelection()
