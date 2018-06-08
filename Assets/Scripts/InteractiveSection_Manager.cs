@@ -29,6 +29,24 @@ public class InteractiveSection_Manager : MonoBehaviour {
         speed = -10f;
     }
 
+    public void BoarderLeft()
+    {
+        Debug.Log("-1800");
+        for (int i = 0; i < canvas.Length; i++)
+        {
+            canvas[i].transform.position = new Vector2(canvas[i].transform.position.x + 5240, canvas[i].transform.position.y);
+        }
+    }
+
+    public void BoarderRight()
+    {
+        Debug.Log("2830");
+        for (int i = 0; i < canvas.Length; i++)
+        {
+            canvas[i].transform.position = new Vector2(canvas[i].transform.position.x - 5240, canvas[i].transform.position.y);
+        }
+    }
+
     void Update()
     {
         if(isMoving == true)
@@ -36,17 +54,12 @@ public class InteractiveSection_Manager : MonoBehaviour {
             InteraciveClone.transform.rotation = Quaternion.Euler(0, 0, -45 * inverter);
             if (canvas[0].transform.position.x >= 2830)
             {
-                for (int i = 0; i < canvas.Length; i++)
-                {
-                    canvas[i].transform.position = new Vector2(canvas[i].transform.position.x- 5240, canvas[i].transform.position.y);
-                }
+
             }
             if (canvas[0].transform.position.x <= -1800)
             {
-                for (int i = 0; i < canvas.Length; i++)
-                {
-                   canvas[i].transform.position = new Vector2(canvas[i].transform.position.x + 5240, canvas[i].transform.position.y);
-                }
+                    
+
             }
 
             for (int i = 0; i < canvas.Length; i++)

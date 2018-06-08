@@ -9,7 +9,7 @@ public class InteractiveSection_Movement : MonoBehaviour, IPointerEnterHandler, 
     public int Inverter;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Mouse enter");
+        //Debug.Log("Mouse enter");
         isOver = true;
         GMRef.GetComponent<InteractiveSection_Manager>().isMoving = true;
         GMRef.GetComponent<InteractiveSection_Manager>().inverter =Inverter;
@@ -17,7 +17,7 @@ public class InteractiveSection_Movement : MonoBehaviour, IPointerEnterHandler, 
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Mouse exit");
+        //Debug.Log("Mouse exit");
         isOver = false;
         GMRef.GetComponent<InteractiveSection_Manager>().isMoving = false;
     }

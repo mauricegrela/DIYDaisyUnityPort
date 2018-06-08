@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -19,9 +19,9 @@ public class ResultScreen_Manager : MonoBehaviour {
         SelecedStickerRef = GameObject.FindGameObjectWithTag("SelectedSticker");
         Instance = Instantiate(SelecedStickerRef, Clone_Position.position, SelecedStickerRef.transform.rotation);
         //Instance.transform.SetParent(gameObject.transform);// = gameObject.transform;
-        Instance.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        Instance.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        Instance.transform.SetParent(gameObject.transform, false);// = gameObject.transform;
         Instance.transform.position = Clone_Position.position;
-        Instance.transform.SetParent(gameObject.transform, true);// = gameObject.transform;
         Instance.tag = "ClonedSticker";
     }
 
@@ -38,9 +38,9 @@ public class ResultScreen_Manager : MonoBehaviour {
     {
         SelecedStickerRef = GameObject.FindGameObjectWithTag("ClonedSticker");
         Instance = Instantiate(SelecedStickerRef, Clone_Position.position, SelecedStickerRef.transform.rotation);
-        Instance.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        Instance.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        Instance.transform.SetParent(Interactive.transform, false);// = gameObject.transform;
         Instance.transform.position = Clone_Position.position;
-        Instance.transform.SetParent(Interactive.transform, true);// = gameObject.transform;
         Interactive.GetComponent<InteractiveSection_Manager>().InteraciveClone = Instance;
         //Destroy(SelecedStickerRef);
     }
