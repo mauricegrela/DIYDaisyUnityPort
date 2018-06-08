@@ -13,6 +13,8 @@ public class InteractiveSection_Manager : MonoBehaviour {
     public bool isMoving = false;
     public int inverter = 1;
     public GameObject InteraciveClone;
+    public Transform PositionLeft;
+    public Transform PositionRight;
 
     private RectTransform rectTransform
     {
@@ -26,24 +28,26 @@ public class InteractiveSection_Manager : MonoBehaviour {
     {
         button = gameObject.GetComponent<RectTransform>();
         startingPosition = transform.position;
-        speed = -10f;
+        //speed = -10f;
     }
 
     public void BoarderLeft()
     {
+
         Debug.Log("-1800");
         for (int i = 0; i < canvas.Length; i++)
         {
-            canvas[i].transform.position = new Vector2(canvas[i].transform.position.x + 5240, canvas[i].transform.position.y);
+            canvas[i].transform.position = PositionLeft.position;//new Vector2(canvas[i].transform.position.x + 5240, canvas[i].transform.position.y);
         }
     }
 
     public void BoarderRight()
     {
+
         Debug.Log("2830");
         for (int i = 0; i < canvas.Length; i++)
         {
-            canvas[i].transform.position = new Vector2(canvas[i].transform.position.x - 5240, canvas[i].transform.position.y);
+            canvas[i].transform.position = PositionRight.position;//new Vector2(canvas[i].transform.position.x  -2124, canvas[i].transform.position.y);
         }
     }
 
@@ -67,7 +71,7 @@ public class InteractiveSection_Manager : MonoBehaviour {
                 canvas[i].transform.Translate(speed * inverter, 0f, 0f);
             }
         }
-            else
+        else if(InteraciveClone != null)
             {
             InteraciveClone.transform.position = Input.mousePosition;
             InteraciveClone.transform.rotation = new Quaternion(0, 0, 0, 0);
