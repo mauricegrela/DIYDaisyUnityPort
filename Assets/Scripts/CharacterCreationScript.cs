@@ -16,6 +16,11 @@ public class CharacterCreationScript : MonoBehaviour {
     public GameObject Test;
     private Sprite BodySpriteRef;
     Color TurnedOff = new Color(0,0,0,0);
+
+    public AudioSource SFXSource;
+
+    public AudioClip PlaceSound;
+
     // Use this for initialization
     void Start () {
 		
@@ -140,30 +145,37 @@ public class CharacterCreationScript : MonoBehaviour {
 
     public void NextCounter()
     {
-    CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(false);
-        if(StickerSetCounter < CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets.Length-1)
+        if (isClickDragging == false)
         {
-        StickerSetCounter++;
-        }
+            CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(false);
+            if (StickerSetCounter < CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets.Length - 1)
+            {
+                StickerSetCounter++;
+            }
             else
             {
-            StickerSetCounter = 0;
+                StickerSetCounter = 0;
             }
-    CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(true);
+            CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(true);
+        }
     }
 
     public void PreviousCounter()
     {
-        CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(false);
-        if (StickerSetCounter >0)
+        if (isClickDragging == false)
         {
-            StickerSetCounter--;
+            CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(false);
+            if (StickerSetCounter > 0)
+            {
+                StickerSetCounter--;
+            }
+            else
+            {
+                StickerSetCounter = CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets.Length - 1;
+            }
+            CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(true);   
         }
-        else
-        {
-            StickerSetCounter = CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets.Length-1;
-        }
-        CurrentCharacter.GetComponent<CharacterDataStorage>().StickerSets[StickerSetCounter].SetActive(true);
+
     }
 
     public void CharacterClickAndDrag(Transform TargetSticker)
@@ -180,7 +192,11 @@ public class CharacterCreationScript : MonoBehaviour {
 
     public void CharacterClickAndDragEnd()
     {
+        SFXSource.clip = PlaceSound;
+        SFXSource.Play();
+
         isClickDragging = false;
+        Debug.Log("Working");
     }
 
     public void ChangeLevel(string Level)

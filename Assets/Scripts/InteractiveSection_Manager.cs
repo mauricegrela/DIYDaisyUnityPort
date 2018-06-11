@@ -55,6 +55,7 @@ public class InteractiveSection_Manager : MonoBehaviour {
     {
         if(isMoving == true)
         {
+            InteraciveClone.transform.position = Input.mousePosition;
             InteraciveClone.transform.rotation = Quaternion.Euler(0, 0, -45 * inverter);
             if (canvas[0].transform.position.x >= 2830)
             {

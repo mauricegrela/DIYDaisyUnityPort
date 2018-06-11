@@ -65,4 +65,9 @@ public class ResultScreen_Manager : MonoBehaviour {
     void Update () {
 		
 	}
+
+    public void CloneToggle(bool Setting)
+    {
+        Instance.SetActive(Setting); 
+    }
 }

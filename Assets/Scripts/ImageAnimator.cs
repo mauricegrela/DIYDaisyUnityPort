@@ -10,6 +10,8 @@ public class ImageAnimator : MonoBehaviour {
     public bool isAnimated;
     private bool isAnimating = false;
     private Vector3 OGPose;
+    public AudioSource SFXSource;
+    public AudioClip PlaceSound;
 
     void Start()
     {
@@ -49,6 +51,9 @@ public class ImageAnimator : MonoBehaviour {
     {
         if (isAnimating == false)
         {
+            SFXSource.clip = PlaceSound;
+            SFXSource.Play();
+            SFXSource.loop = true;
             isAnimating = true;
             StartCoroutine("nukeMethod"); //Debug.Log("Triggered");
         }
@@ -56,9 +61,11 @@ public class ImageAnimator : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
+        SFXSource.Play();
+        SFXSource.loop = false;
 
-            isAnimating = false;
-
+        isAnimating = false;
+        gameObject.GetComponent<Image>().sprite = sprites[0];
     }
 
     public void ResetPosition()
