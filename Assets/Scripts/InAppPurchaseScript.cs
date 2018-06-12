@@ -37,7 +37,7 @@ public class InAppPurchaseScript : MonoBehaviour {
                 Characters[i].GetComponent<Button>().enabled = true;
                 }
 
-            Debug.Log(Characters[i].GetComponent<Image>().enabled);
+            //Debug.Log(Characters[i].GetComponent<Image>().enabled);
         }
     }
 }
