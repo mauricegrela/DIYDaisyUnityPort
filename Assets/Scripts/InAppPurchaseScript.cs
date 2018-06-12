@@ -7,6 +7,7 @@ public class InAppPurchaseScript : MonoBehaviour {
 
     public GameObject[] Characters;
     public int CharactersUnlocked;
+    public GameObject LockedCharacter;
 
     // Use this for initialization
     void Start () {
@@ -38,6 +39,11 @@ public class InAppPurchaseScript : MonoBehaviour {
                 }
 
             //Debug.Log(Characters[i].GetComponent<Image>().enabled);
+        }
+        if(CharactersUnlocked == 2)
+        {
+            LockedCharacter.SetActive(true);
+
         }
     }
 }

@@ -7,9 +7,10 @@ public class ParentsCornerActivation : MonoBehaviour {
 
 
     public string[] BootColNames;
-    public Color[] BootCols;
+    public Sprite[] BootCols;
     public Image BootImg;
     public InputField InputRef;
+    public GameObject[] Locks;
 
     private string CorrectAnswer;
     private int CorrectAnswerIndex;
@@ -26,19 +27,25 @@ public class ParentsCornerActivation : MonoBehaviour {
 
     public void SetNewImage()
     {
+        Debug.Log("Setting New Image");
         CorrectAnswerIndex = Random.Range(0, BootColNames.Length - 1);
         Debug.Log(BootColNames[CorrectAnswerIndex]);
         CorrectAnswer = BootColNames[CorrectAnswerIndex];
-        BootImg.color = BootCols[CorrectAnswerIndex];
+        BootImg.sprite = BootCols[CorrectAnswerIndex];
 
     }
 
 
     public void CheckIfAnswerRight(string Answer)
     {
+        Debug.Log(InputRef.text.ToLower() +"///////"+ BootColNames[CorrectAnswerIndex]);
         if(InputRef.text.ToLower() == BootColNames[CorrectAnswerIndex])
         {
             gameObject.SetActive(false);
+            for (int i = 0; i <= Locks.Length - 1; i++)
+            {
+                Locks[i].SetActive(false);
+            }
         }
     }
 
