@@ -8,6 +8,7 @@ public class ResultScreen_Manager : MonoBehaviour {
     public Transform Clone_Position;
     public Transform Interactive;
     private GameObject Instance;
+    public Transform ParentRef;
     // Use this for initialization
     void Start () {
         
@@ -39,7 +40,7 @@ public class ResultScreen_Manager : MonoBehaviour {
         SelecedStickerRef = GameObject.FindGameObjectWithTag("ClonedSticker");
         Instance = Instantiate(SelecedStickerRef, Clone_Position.position, SelecedStickerRef.transform.rotation);
         Instance.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
-        Instance.transform.SetParent(Interactive.transform, false);// = gameObject.transform;
+        Instance.transform.SetParent(ParentRef.transform, false);// = gameObject.transform;
         Instance.transform.position = Clone_Position.position;
         Interactive.GetComponent<InteractiveSection_Manager>().InteraciveClone = Instance;
         //Destroy(SelecedStickerRef);
@@ -68,6 +69,16 @@ public class ResultScreen_Manager : MonoBehaviour {
 
     public void CloneToggle(bool Setting)
     {
+        //GameObject ClonedSticker;
+
+        if(Instance != null)
+        {
         Instance.SetActive(Setting); 
+        }
+            else
+            {
+            Instance = GameObject.FindGameObjectWithTag("ClonedSticker"); 
+            Instance.SetActive(Setting);
+            }
     }
 }

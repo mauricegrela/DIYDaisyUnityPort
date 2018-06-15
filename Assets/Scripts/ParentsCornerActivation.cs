@@ -11,6 +11,8 @@ public class ParentsCornerActivation : MonoBehaviour {
     public Image BootImg;
     public InputField InputRef;
     public GameObject[] Locks;
+    public Image[] IMGRef;
+    public Color Unlocked;
 
     private string CorrectAnswer;
     private int CorrectAnswerIndex;
@@ -45,6 +47,12 @@ public class ParentsCornerActivation : MonoBehaviour {
             for (int i = 0; i <= Locks.Length - 1; i++)
             {
                 Locks[i].SetActive(false);
+
+            }
+
+            for (int i = 0; i <= IMGRef.Length - 1; i++)
+            {
+                IMGRef[i].color = Unlocked;
             }
         }
     }
