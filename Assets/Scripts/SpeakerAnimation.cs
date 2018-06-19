@@ -24,4 +24,9 @@ public class SpeakerAnimation : MonoBehaviour {
             }     
         StartCoroutine("nukeMethod");
     }
+
+    public void KickStart()
+    {
+        StartCoroutine("nukeMethod");  
+    }
 }

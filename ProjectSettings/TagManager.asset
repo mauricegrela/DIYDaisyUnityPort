@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TETDS
+    uniqueID: 2558322347
+    locked: 0

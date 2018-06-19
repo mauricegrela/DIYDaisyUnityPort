@@ -9,6 +9,7 @@ public class ResultScreen_Manager : MonoBehaviour {
     public Transform Interactive;
     private GameObject Instance;
     public Transform ParentRef;
+    private float scaleSetter = 1;
     // Use this for initialization
     void Start () {
         
@@ -39,7 +40,7 @@ public class ResultScreen_Manager : MonoBehaviour {
     {
         SelecedStickerRef = GameObject.FindGameObjectWithTag("ClonedSticker");
         Instance = Instantiate(SelecedStickerRef, Clone_Position.position, SelecedStickerRef.transform.rotation);
-        Instance.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+        Instance.transform.localScale = new Vector3(scaleSetter, scaleSetter, scaleSetter);
         Instance.transform.SetParent(ParentRef.transform, false);// = gameObject.transform;
         Instance.transform.position = Clone_Position.position;
         Interactive.GetComponent<InteractiveSection_Manager>().InteraciveClone = Instance;
@@ -55,17 +56,29 @@ public class ResultScreen_Manager : MonoBehaviour {
         Destroy(SelecedStickerRef);
         }
 
-        SelecedStickerRef = GameObject.FindGameObjectWithTag("SelectedSticker");
+
         if (Instance != null)
         {
             Destroy(Instance);
         }
+
+        SelecedStickerRef = GameObject.FindGameObjectWithTag("SelectedSticker");
+        if (SelecedStickerRef != null)
+        {
+            Destroy(SelecedStickerRef);
+        }
+
     }
 
     // Update is called once per frame
     void Update () {
 		
 	}
+
+    public void ScaleAdjustment(float Adjustment)
+    {
+        scaleSetter = Adjustment;
+    }
 
     public void CloneToggle(bool Setting)
     {

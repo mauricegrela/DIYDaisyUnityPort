@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: 60fed20e3cc84a84285df535de3b68ef
+guid: 615b7ecfb943d46c59390e66c78d028d
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: results-ui-sprite@2x_0
-    21300002: results-ui-sprite@2x_1
-    21300004: results-ui-sprite@2x_2
-    21300006: results-ui-sprite@2x_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -36,15 +32,15 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 2
+    wrapV: 2
+    wrapW: 2
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -128,91 +124,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: results-ui-sprite@2x_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 471
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 477d70b6d84a34d87a0aff1f9c4b7892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: results-ui-sprite@2x_1
-      rect:
-        serializedVersion: 2
-        x: 471
-        y: 0
-        width: 471
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e52fda7e456cc491e94c0b3f84c6c6ec
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: results-ui-sprite@2x_2
-      rect:
-        serializedVersion: 2
-        x: 942
-        y: 0
-        width: 471
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1efae5b62cb642dda50550756d10791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: results-ui-sprite@2x_3
-      rect:
-        serializedVersion: 2
-        x: 1413
-        y: 0
-        width: 471
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db790697dc0374a4a927ca58f9482399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8114b3c5df56042a0aba18ec2ceaddb7
+    spriteID: 766dc374cd013417f894f7b0d5016dd1
     vertices: []
     indices: 
     edges: []
