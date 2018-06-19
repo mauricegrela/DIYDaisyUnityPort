@@ -1719,7 +1719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: -281}
+  m_AnchoredPosition: {x: -380, y: -290}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141515813
@@ -8442,7 +8442,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.6
+          m_FloatArgument: 0.7
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -10256,7 +10256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: -297}
+  m_AnchoredPosition: {x: -380, y: -306}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785467280
@@ -11136,7 +11136,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.6
+          m_FloatArgument: 0.7
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -19272,7 +19272,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.6
+          m_FloatArgument: 0.7
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -22312,7 +22312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28, y: -297}
+  m_AnchoredPosition: {x: -5.000002, y: -297}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726108179
@@ -25147,7 +25147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212, y: -285}
+  m_AnchoredPosition: {x: -189, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007264789
@@ -26838,7 +26838,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.6
+          m_FloatArgument: 0.7
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
