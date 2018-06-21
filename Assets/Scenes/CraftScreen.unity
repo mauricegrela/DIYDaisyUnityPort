@@ -195,11 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0.9411765
-    g: 0.9411765
-    b: 0.9411765
-    a: 0.49803922
+  Sellected: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.49803922}
   SpriteToSet: {fileID: 21300000, guid: 53ddf100e0f40294e966a834bad89889, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &8511637
@@ -488,11 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 754120058}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49411765
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49411765}
   SpriteToSet: {fileID: 21300000, guid: 485f167e12b5ae0439033ab054df6315, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &37471685
@@ -566,11 +558,7 @@ MonoBehaviour:
   - {fileID: 1668675497}
   - {fileID: 897175667}
   - {fileID: 2142466228}
-  Unlocked:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  Unlocked: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &38985119
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,11 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1077796812}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 62d1ad2b72d927244b5fe4505a72254e, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &57198213
@@ -742,11 +726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 640540171}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: aedb24a12c5ae7546b71772d82cfa60e, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &60320721
@@ -831,11 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1510976018}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 831e0ccc60b06e043a409096bbb1020d, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &63791583
@@ -920,11 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1777215241}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 687306398da3a034ab39006fbd36984c, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &76868066
@@ -1143,6 +1115,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 0656193d917991e478384d0d0852840a, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: e87b9d2abde4c442e96e6ad9640b8651, type: 3}
 --- !u!114 &84959354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,11 +1488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1261627789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 11c499058107d7f46bb8b90e8f7754cb, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!114 &118122615
@@ -1616,6 +1586,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 5fd27aaeeba2281419111e05dbd857d2, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 23b0bceb6365e4896b1b4ca5c03616f4, type: 3}
 --- !u!114 &119391532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,14 +1712,14 @@ RectTransform:
   m_GameObject: {fileID: 141515811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9142351}
+  m_LocalScale: {x: 0.9142351, y: 0.9142351, z: 0.9142351}
   m_Children: []
   m_Father: {fileID: 461538279}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: -294}
+  m_AnchoredPosition: {x: -405.99994, y: -290}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141515813
@@ -2177,11 +2149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1075371792}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 6933900e3701d0249a326e255349d9cc, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &152435771
@@ -2266,11 +2234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 238089857}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: dada8cc9f38d27e4ea77fcc291655918, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &153298266
@@ -2355,11 +2319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 2041978311}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 19a1883959b5dba42980ff903833afb4, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &153920267
@@ -2492,6 +2452,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 01494299b0a99814e98528f2efab97b1, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 0a6d2a977dbc0461eb3bcccd9b9944b5, type: 3}
 --- !u!114 &163279113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,11 +2634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1564835055}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 2e2ab920ae9106e4ea754bf6c88db65b, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &187382810
@@ -2848,7 +2806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &189926183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2993,11 +2951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1777215241}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: de43c50af7426c14aa0b12ca6ec3600b, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &194959748
@@ -3476,11 +3430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1971933688}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: c620eccf4aa5c4c469b5a4e1cffbd127, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &286803592
@@ -3569,11 +3519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1261627789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 6150114745edbfa47a6fa2fbf478cf51, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!114 &289012265
@@ -3691,11 +3637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 00c7de0e4dfdbf14b874d90840223a63, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &293572041
@@ -3813,11 +3755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1881279150}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: f5deeca689c998d44ab811975ed756f8, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &323465415
@@ -4064,11 +4002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 429546064}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 3fa66cf8a16d9464a94be6d769765805, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &347012686
@@ -4484,11 +4418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 640540171}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: ccf1355d670aaf8418a5ba7351ebb94a, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &400369189
@@ -4573,11 +4503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 598074132}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: fc8cac4f736c0a4459cff3d24dd7d50f, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &404036389
@@ -4662,11 +4588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1277297376}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 13ab6983077ecc84bb1c7694fbfda456, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &415645504
@@ -4953,6 +4875,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 51c3791eb2412ab4eb66ca3242faea91, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 048193e9603a54dea9436513cba6f2f1, type: 3}
 --- !u!114 &442672736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5289,11 +5213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 640540171}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: e49a77ed3d8eabd4c9a2e6a369b34526, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1001 &456569223
@@ -5367,8 +5287,8 @@ RectTransform:
   - {fileID: 323465416}
   - {fileID: 683938761}
   - {fileID: 1522062073}
-  - {fileID: 2007264788}
   - {fileID: 528691725}
+  - {fileID: 2007264788}
   - {fileID: 141515812}
   - {fileID: 1783441233}
   - {fileID: 37471686}
@@ -5529,6 +5449,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: cda4382876e0b864db962cfd9ec4b821, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 160f0bd9781d148f28215fba1cf03ade, type: 3}
 --- !u!114 &479338921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6134,11 +6056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1617016431}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: a0587365246a00045bc2cd5a45251530, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &528691724
@@ -6167,14 +6085,14 @@ RectTransform:
   m_GameObject: {fileID: 528691724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9933387}
+  m_LocalScale: {x: 0.9933385, y: 0.9933387, z: 0.9933387}
   m_Children: []
   m_Father: {fileID: 461538279}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.299969, y: -294}
+  m_AnchoredPosition: {x: -23.999956, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528691726
@@ -6766,11 +6684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 598074132}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 5ef330a9b2eb43349b3ad37339447aa6, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &543613744
@@ -6884,7 +6798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.000019, y: 1}
+  m_AnchoredPosition: {x: 14.000019, y: 2.3000093}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565970070
@@ -6899,6 +6813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Test: {fileID: 0}
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 99bafa68175594aafbf9ab08097c5e90, type: 3}
 --- !u!1 &567626966
 GameObject:
   m_ObjectHideFlags: 0
@@ -6982,6 +6898,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!1 &578231558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7169,11 +7087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1777215241}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 3d5a45cc9635dfd4ca5aeb6fb0587508, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &591392563
@@ -7258,11 +7172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 794871789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 6051ffdcd270bad4b9d90ff24ef27daa, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &598074132
@@ -7452,11 +7362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1169488513}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 2e20c23ab9c48a347bbe7ec83809edd6, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &617850430
@@ -7541,11 +7447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: a32fe556fcafd83418040f824447795c, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &622638174
@@ -7630,11 +7532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1075371792}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: addba0138584e6b4684038aece1a023c, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &624088884
@@ -7719,11 +7617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1077796812}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: aa5822a67bc0eab408e3c54d09f4460e, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &633526851
@@ -7932,11 +7826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1574974713}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0
-    g: 0
-    b: 0
-    a: 0.5019608
+  Sellected: {r: 0, g: 0, b: 0, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: fbfe7bab80073aa44b02b43f5a0e915c, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &654216204
@@ -8115,11 +8005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1169488513}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 2a1f94f44a55bc74189cd9820af111bd, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &662686105
@@ -8204,11 +8090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 543613744}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: cc09d08761f090b45bce03d83ed4b49e, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &672870170
@@ -8326,11 +8208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 27514403}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 5bca27f645163e24ea4f418fe1149080, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &682458896
@@ -8396,14 +8274,14 @@ RectTransform:
   m_GameObject: {fileID: 683938760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 461538279}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337, y: -307}
+  m_AnchoredPosition: {x: 358, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683938762
@@ -8832,6 +8710,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clone_Position: {fileID: 249580158}
+  ResultScreenRef: {fileID: 1035669736}
+  BackButtonResults: {fileID: 1391381702}
+  WhiteInstance: {fileID: 1893112041}
+  lerpedColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1 &697720396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,6 +9338,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!222 &747229232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10073,7 +9957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -380, y: -281}
+  m_AnchoredPosition: {x: -405.9999, y: -281}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771555210
@@ -10383,11 +10267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 27514403}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: a2c44111e099dc94fa0fc6dfafcf81b2, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &785467278
@@ -10567,11 +10447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1574974713}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0
-    g: 0
-    b: 0
-    a: 0.5019608
+  Sellected: {r: 0, g: 0, b: 0, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: bdda7c97ac6ebe24ca6b17800c4ff13b, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &794871789
@@ -10792,11 +10668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 598074132}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 562329f19f401d04da74fb4a185a52d3, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &843584407
@@ -10881,11 +10753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 27514403}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: d489947aa11543347982ca85e73b0f50, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &854369284
@@ -10970,11 +10838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1574974713}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0
-    g: 0
-    b: 0
-    a: 0.5019608
+  Sellected: {r: 0, g: 0, b: 0, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: fd15171daec36604f95f6bf25d801649, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &879162236
@@ -11163,7 +11027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 349, y: -285}
+  m_AnchoredPosition: {x: 358, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &897175666
@@ -11444,11 +11308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1077796812}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: f233f8ec3ce0a71439425cd30b170364, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &902546224
@@ -11632,11 +11492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1261627789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 334a3f5aad074f6439162fe3c7011d64, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!114 &926352344
@@ -11754,11 +11610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1169488513}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 46978b8f4d4f3c34eb10b01f319a6ddc, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &959291719
@@ -12176,11 +12028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 8511637}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: afb85f790bb5824438c348fd3f74fd4a, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &982974487
@@ -12477,6 +12325,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: cf9723f2777fa6a468ac7e3cf0fa3fcb, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 1abad36f34c9f47f5a6c1e050e0dfc24, type: 3}
 --- !u!114 &987795184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12657,11 +12507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 754120058}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49411765
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49411765}
   SpriteToSet: {fileID: 21300000, guid: b9f5a4687da79c74592dc8b9dc02e900, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &996136588
@@ -12746,11 +12592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 2041978311}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: f8cdc9491d741ce4a901aba9e208fc7c, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1004116357
@@ -12940,11 +12782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 429546064}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: a57fdfb858980664cbb9688c9a093236, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1011795306
@@ -13130,6 +12968,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 0675889b5e428e9489e5bb7eb0c6b63c, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 316b7d409cf3d43298cd26b6c0fc3ad5, type: 3}
 --- !u!114 &1019780235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13310,11 +13150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1510976018}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: f62efe1acce895145a47d20d33972759, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1034419802
@@ -13453,6 +13289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clone_Position: {fileID: 293572042}
   Interactive: {fileID: 1272390520}
+  ParentRef: {fileID: 1070813449}
 --- !u!1 &1043880772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13552,6 +13389,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 6ecf7cd8d624b384d8ebb58ab24ddacc, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 9ae0120909dcd4865a43ef3e0d642fc8, type: 3}
 --- !u!114 &1044424785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13732,11 +13571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 543613744}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 1479161dbb024e848ac98c4173de5dd0, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1070813448
@@ -13860,6 +13695,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!1 &1075371792
 GameObject:
   m_ObjectHideFlags: 0
@@ -14435,11 +14272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1564835055}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: c9730b93e7f8ce547a8d312acab9362e, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1136842451
@@ -14592,11 +14425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 8511637}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 1196f32d9d7e7c940af9fe39a7d21dfa, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1148487868
@@ -14681,11 +14510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1277297376}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 85e4a861d0bdb934a9f0e6427f3dbad8, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1150237027
@@ -14770,11 +14595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1277297376}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 0b0e5d194f27b824ebb2963ab8828cc9, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1162721933
@@ -14859,11 +14680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 429546064}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: e78dbb8b6b3177644be6c25578bbc12a, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1169488513
@@ -15016,11 +14833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 794871789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: b44b47fd6c30f7748ab691f1bb2de019, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1186842960
@@ -15105,11 +14918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1881279150}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 947277cc6646e5948a476a7bf7ffb81f, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1195325293
@@ -15231,11 +15040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 754120058}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49411765
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49411765}
   SpriteToSet: {fileID: 21300000, guid: 4128fe71458c02d4ea27d98095d90ab9, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1204298887
@@ -15480,11 +15285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: cb4d1c7eae77f894eb7312ce4bd96352, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1225084753
@@ -15569,11 +15370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1075371792}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 0898d78bc99fdd04cb1fb91c4441670d, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1244471601
@@ -15763,11 +15560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 2041978311}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 77805cc63ec418a408b167e1e54dc26a, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1258168864
@@ -15852,11 +15645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1277297376}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 08b40c9e98d5ed44590117e8ee61e4ff, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1261627789
@@ -16272,6 +16061,8 @@ MonoBehaviour:
   isMoving: 0
   inverter: 1
   InteraciveClone: {fileID: 0}
+  PositionLeft: {fileID: 1316238723}
+  PositionRight: {fileID: 1588481499}
 --- !u!1 &1273894332
 GameObject:
   m_ObjectHideFlags: 0
@@ -16527,11 +16318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 640540171}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 5c2ffde189ac8ef43b5829b5388662e5, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1294004917
@@ -16616,11 +16403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1617016431}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: c31a2cf60801e87449ee501d12d0b738, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1309382471
@@ -16837,6 +16620,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!1 &1320252558
 GameObject:
   m_ObjectHideFlags: 0
@@ -16956,11 +16741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 794871789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: bafb910c53a37404797a89a7cbd3b93b, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1337399830
@@ -17130,11 +16911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1574974713}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0
-    g: 0
-    b: 0
-    a: 0.5019608
+  Sellected: {r: 0, g: 0, b: 0, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: a639ef142d6afe54d9cbc032fb3f5bce, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1363769720
@@ -17219,11 +16996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1971933688}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 31bbe04febdaf0c409ae0e2dc1724190, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1364802056
@@ -17345,11 +17118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 598074132}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 443e855743344d840bcfa0237194fc8d, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1387195917
@@ -17401,11 +17170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1261627789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: be9ce4d8b8b5a704a8e04ba148dbb5c9, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!114 &1387195920
@@ -17523,11 +17288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1881279150}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 7898f0669c81cd742a9abfbbeeb180c6, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1391381702
@@ -17829,6 +17590,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!222 &1398381909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17937,11 +17700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1077796812}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 16b3cbe596441f4408a8f1a82f2c3433, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1419914367
@@ -18035,7 +17794,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e58c121257b6d1c40a4e977c2dea8c90, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9598dd19c627bff438f08e15cf9f825f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18223,11 +17982,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1869566355}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212, y: -285}
+  m_AnchoredPosition: {x: -215, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452807058
@@ -18473,14 +18232,14 @@ RectTransform:
   m_GameObject: {fileID: 1463560511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.86, y: 0.86, z: 0.86}
+  m_LocalScale: {x: 0.94343954, y: 0.94343954, z: 0.94343954}
   m_Children: []
   m_Father: {fileID: 1783441233}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.522005, y: 0.8439}
+  m_AnchoredPosition: {x: -7, y: -1}
   m_SizeDelta: {x: 453.5, y: 64.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1469478803
@@ -18639,11 +18398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 238089857}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: cbc4f334557b31644806a9f64d765c44, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1488584048
@@ -19407,7 +19162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 124.00003, y: -299}
+  m_AnchoredPosition: {x: 167.00005, y: -285.01}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522062074
@@ -19661,7 +19416,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2d3af547604d20d4c8bb5188bbc8b610, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9e1af4019d549e4b83493e672646b6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19757,11 +19512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1617016431}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 53b74a48c7d8ef24ab18abe40ee446d7, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1541357876
@@ -19826,6 +19577,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: c46225bafc1607248bb41dbe467c0659, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 6dbc895ebb60f44f380b1898f649e9ea, type: 3}
 --- !u!114 &1541357879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20006,11 +19759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 543613744}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 5bd53fcebf75b9444a6f1451d3e84511, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1557677779
@@ -20248,11 +19997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1971933688}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: cd38c7f45e30ec148bc499419c7fcb5f, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1564835055
@@ -20473,11 +20218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1881279150}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 9a7dfaa5ff149a3489cd8bdf668f6fc5, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1588481498
@@ -20563,6 +20304,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!1 &1590886160
 GameObject:
   m_ObjectHideFlags: 0
@@ -20781,11 +20524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1564835055}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: f987fdd6c10e3cb45ba7c8a7ba750e84, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1634721511
@@ -20870,11 +20609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1510976018}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 2f46a92d52813e0468368a527b194578, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1652259047
@@ -21092,11 +20827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 543613744}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: cc0d9b6482c53ee4994f941df775c8af, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1657903311
@@ -21464,11 +21195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 8511637}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 0f879c2fbb4514849adfd1e352049636, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1668675494
@@ -21500,11 +21227,11 @@ RectTransform:
   m_LocalScale: {x: 0.95360494, y: 0.9536051, z: 0.9536051}
   m_Children: []
   m_Father: {fileID: 1869566355}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.299999, y: -277}
+  m_AnchoredPosition: {x: -23.99996, y: -277}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668675496
@@ -21774,11 +21501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0.9411765
-    g: 0.9411765
-    b: 0.9411765
-    a: 0.49803922
+  Sellected: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.49803922}
   SpriteToSet: {fileID: 21300000, guid: f7151a7a0cc6e5545a8ae06430cfa4f3, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1677232998
@@ -21968,11 +21691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 794871789}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 069844ad3bfed674295cd7f22e13fcb4, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1703690705
@@ -22289,11 +22008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1564835055}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 376c3c68ea7ab404da3fb3af3ddb4c6a, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1707599867
@@ -22378,11 +22093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1510976018}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 95785eeef35a9d54aa8149b991c83128, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1716523423
@@ -22447,6 +22158,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: de5167bb51b4c2848933cd2a3b6aee02, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 7665f2f7b10d842d388797c84cb2dc13, type: 3}
 --- !u!222 &1716523426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22753,11 +22466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 708698a37904868418a52de8fa360ba1, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1727756888
@@ -22910,11 +22619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0.9411765
-    g: 0.9411765
-    b: 0.9411765
-    a: 0.49803922
+  Sellected: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.49803922}
   SpriteToSet: {fileID: 21300000, guid: 00ee5fc6124047d46b13937e7dd0013f, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1734449709
@@ -22995,6 +22700,8 @@ MonoBehaviour:
   sprites: []
   animationSpeed: 0
   isAnimated: 0
+  SFXSource: {fileID: 0}
+  PlaceSound: {fileID: 0}
 --- !u!222 &1734449713
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23323,7 +23030,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: aca2a14b8389af4408c96f2b70531855, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca3af8a46bd56704fab7fbabd0052631, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23371,7 +23078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164.00003, y: -296}
+  m_AnchoredPosition: {x: 176, y: -288.13}
   m_SizeDelta: {x: 511.8, y: 185.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783441234
@@ -23718,11 +23425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 754120058}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49411765
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49411765}
   SpriteToSet: {fileID: 21300000, guid: b90351a9450bacd4bbaab68b1c02cbd5, type: 3}
   BodyLocation: {fileID: 1251054195}
 --- !u!1 &1828715697
@@ -23807,11 +23510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 238089857}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 33bd8e27ea84e8b4ebc6420ca2626a8d, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1829334480
@@ -23967,11 +23666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 2041978311}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 4353c778f793cdd4cad6cc1eaa483640, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1833671153
@@ -24065,16 +23760,16 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1838608722}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.86, y: 0.86, z: 0.86}
+  m_LocalScale: {x: 0.94343954, y: 0.94343954, z: 0.94343954}
   m_Children: []
   m_Father: {fileID: 1652259051}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2, y: -1.074}
+  m_AnchoredPosition: {x: -7, y: -1}
   m_SizeDelta: {x: 453.5, y: 64.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838608724
@@ -24262,11 +23957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1169488513}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: f80a245d7ad1bef44b4d91db73e9d09e, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &1869566354
@@ -24298,8 +23989,8 @@ RectTransform:
   - {fileID: 2038290879}
   - {fileID: 897175665}
   - {fileID: 2142466226}
-  - {fileID: 1452807057}
   - {fileID: 1668675495}
+  - {fileID: 1452807057}
   - {fileID: 771555209}
   - {fileID: 1652259051}
   - {fileID: 2139044277}
@@ -24412,11 +24103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 727194340}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 0.9411765
-    g: 0.9411765
-    b: 0.9411765
-    a: 0.49803922
+  Sellected: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.49803922}
   SpriteToSet: {fileID: 21300000, guid: 933658e402d5fc647b79f37b289695e4, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &1880094169
@@ -24870,11 +24557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 238089857}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 4d518d6b1145d664da05355a1a8d6fa0, type: 3}
   BodyLocation: {fileID: 732291374}
 --- !u!1 &1928708972
@@ -24959,11 +24642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 429546064}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 48710911c934c5940a49b0f832084ac2, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1950393205
@@ -25279,11 +24958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1617016431}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 992fde25159c34842834cace34f84692, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &1995765231
@@ -25402,11 +25077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 27514403}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: dde5488b4ef30b045bc93b0c5bd2b7cc, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &2004409905
@@ -25491,11 +25162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 8511637}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 2b781058ff3de5f4b97148296c3c3ca4, type: 3}
   BodyLocation: {fileID: 153920268}
 --- !u!1 &2007264787
@@ -25524,14 +25191,14 @@ RectTransform:
   m_GameObject: {fileID: 2007264787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 461538279}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189, y: -296}
+  m_AnchoredPosition: {x: -214.99995, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007264789
@@ -25813,11 +25480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1971933688}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.49019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.49019608}
   SpriteToSet: {fileID: 21300000, guid: 4d72caf76fad2e148b190af238bea1ba, type: 3}
   BodyLocation: {fileID: 374065338}
 --- !u!1 &2038290878
@@ -25979,7 +25642,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c86d514a5c14f914680c470c010d15eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aa4ad63957636bd4490be7812161b1ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26508,6 +26171,8 @@ MonoBehaviour:
   - {fileID: 21300016, guid: 07a11a1a23dd8db40aac4053338f0206, type: 3}
   animationSpeed: 0.1
   isAnimated: 1
+  SFXSource: {fileID: 1111611331}
+  PlaceSound: {fileID: 8300000, guid: 8a6ee286759504c1f87e93a5cf9cf010, type: 3}
 --- !u!114 &2084473833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26688,11 +26353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1075371792}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: d333e7fe6e791cb4992a0b1a7002327e, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &2111037854
@@ -26960,11 +26621,7 @@ MonoBehaviour:
   - {fileID: 528691727}
   - {fileID: 683938763}
   - {fileID: 1522062075}
-  Unlocked:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  Unlocked: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2140476844
 GameObject:
   m_ObjectHideFlags: 0
@@ -27047,11 +26704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSheet: {fileID: 1777215241}
   ClickDragScriptRef: {fileID: 565970070}
-  Sellected:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.5019608
+  Sellected: {r: 1, g: 1, b: 1, a: 0.5019608}
   SpriteToSet: {fileID: 21300000, guid: 90a98a45269c38143be9008c1e0b1859, type: 3}
   BodyLocation: {fileID: 585998815}
 --- !u!1 &2142466225
@@ -27087,7 +26740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162, y: -285}
+  m_AnchoredPosition: {x: 167, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142466227

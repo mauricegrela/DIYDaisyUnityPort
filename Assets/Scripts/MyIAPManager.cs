@@ -63,6 +63,7 @@ public class MyIAPManager :MonoBehaviour, IStoreListener
     /// </summary>
     public void OnPurchaseFailed(Product i, PurchaseFailureReason p)
     {
+        Debug.Log("Purchase Failed");
     }
 
     public void TestBuild()
@@ -71,7 +72,7 @@ public class MyIAPManager :MonoBehaviour, IStoreListener
         builder.AddProduct("com.imaginecreatemedia.daisy.StickerSet", ProductType.NonConsumable);
 
         UnityPurchasing.Initialize(this, builder);
-        Debug.Log("Working");
+       
     }
 
 }
