@@ -2806,7 +2806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &189926183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2999,8 +2999,8 @@ GameObject:
   - component: {fileID: 213376966}
   - component: {fileID: 213376965}
   - component: {fileID: 213376969}
-  - component: {fileID: 213376971}
   - component: {fileID: 213376970}
+  - component: {fileID: 213376971}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3098,24 +3098,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da75246d9a2d2da439bf743e6acaa334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &213376970
-Animator:
-  serializedVersion: 3
+--- !u!114 &213376970
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213376964}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: abf2faae7458fcd408d2ceb3fdea5c7b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3261420e2d4249bb9ee8741b667102d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &213376971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6092,7 +6085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.999956, y: -285}
+  m_AnchoredPosition: {x: -25, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528691726
@@ -8281,7 +8274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358, y: -285}
+  m_AnchoredPosition: {x: 355, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683938762
@@ -10873,7 +10866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 321, y: -348}
+  m_AnchoredPosition: {x: 293, y: -318}
   m_SizeDelta: {x: 384, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879162238
@@ -10895,7 +10888,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 710dfce5f68b0ff4cb33461f277ca44f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88de53f84233946e89571511bd836b7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11027,7 +11020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358, y: -285}
+  m_AnchoredPosition: {x: 355, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &897175666
@@ -11400,6 +11393,17 @@ MonoBehaviour:
       - m_Target: {fileID: 371382010}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 690274535}
+        m_MethodName: Stop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15813,6 +15817,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1034419805}
+        m_MethodName: KickStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1264151140
@@ -17794,7 +17809,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9598dd19c627bff438f08e15cf9f825f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e58c121257b6d1c40a4e977c2dea8c90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18232,14 +18247,14 @@ RectTransform:
   m_GameObject: {fileID: 1463560511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.94343954, y: 0.94343954, z: 0.94343954}
+  m_LocalScale: {x: -0.9262861, y: 0.9262861, z: 0.9262861}
   m_Children: []
   m_Father: {fileID: 1783441233}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -1}
+  m_AnchoredPosition: {x: -12.7, y: -6.9}
   m_SizeDelta: {x: 453.5, y: 64.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1469478803
@@ -18752,13 +18767,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1111611331}
-        m_MethodName: set_clip
-        m_Mode: 2
+      - m_Target: {fileID: 1034419805}
+        m_MethodName: KickStart
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 0550cf6cd2df34527b78883596864d8a,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18782,6 +18796,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: 3981722dbf911436aa1a6220480d1f2d,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 690274535}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19162,7 +19187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 167.00005, y: -285.01}
+  m_AnchoredPosition: {x: 165, y: -285.01}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522062074
@@ -19416,7 +19441,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9e1af4019d549e4b83493e672646b6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d3af547604d20d4c8bb5188bbc8b610, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21231,7 +21256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.99996, y: -277}
+  m_AnchoredPosition: {x: -25, y: -277}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668675496
@@ -21586,7 +21611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1682836022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22796,7 +22821,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Click the characters to download printable instructions for making your
-    own nature craft
+    own nature craft.
 --- !u!222 &1742031672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23030,7 +23055,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ca3af8a46bd56704fab7fbabd0052631, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aca2a14b8389af4408c96f2b70531855, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23762,14 +23787,14 @@ RectTransform:
   m_GameObject: {fileID: 1838608722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.94343954, y: 0.94343954, z: 0.94343954}
+  m_LocalScale: {x: -0.9262861, y: 0.9262861, z: 0.9262861}
   m_Children: []
   m_Father: {fileID: 1652259051}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7, y: -1}
+  m_AnchoredPosition: {x: -12.7, y: -6.9}
   m_SizeDelta: {x: 453.5, y: 64.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838608724
@@ -25642,7 +25667,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: aa4ad63957636bd4490be7812161b1ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c86d514a5c14f914680c470c010d15eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26740,7 +26765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 167, y: -285}
+  m_AnchoredPosition: {x: 165, y: -285}
   m_SizeDelta: {x: 191.5, y: 191.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142466227

@@ -154,7 +154,7 @@ PlayerSettings:
   applicationIdentifier:
     iOS: com.imaginecreatemedia.daisy
   buildNumber:
-    iOS: 1.1
+    iOS: 1.5
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -836,7 +836,7 @@ PlayerSettings:
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 1
+    UNet: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: a0f78d9a-97b7-44dc-b51c-50d9fd2232e1

@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: a63e77ae6b28f4bd58e759bfd294a703
   - enabled: 1
     path: Assets/Scenes/CraftScreen.unity
-    guid: 7f91c438213a5714c9fb80c40f5cd49a
+    guid: a447c691f5f2f4f4bb88b54187b810f1
   - enabled: 1
     path: Assets/Scenes/Results.unity
     guid: 78936f64b401fca4cb1924f8c90a6d8e
