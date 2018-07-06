@@ -13,6 +13,7 @@ public class ParentsCornerActivation : MonoBehaviour {
     public GameObject[] Locks;
     public Image[] IMGRef;
     public Color Unlocked;
+    public GameObject Unlock;
 
     private string CorrectAnswer;
     private int CorrectAnswerIndex;
@@ -30,7 +31,7 @@ public class ParentsCornerActivation : MonoBehaviour {
     public void SetNewImage()
     {
         Debug.Log("Setting New Image");
-        CorrectAnswerIndex = Random.Range(0, BootColNames.Length - 1);
+        CorrectAnswerIndex = Random.Range(0, BootColNames.Length );
         Debug.Log(BootColNames[CorrectAnswerIndex]);
         CorrectAnswer = BootColNames[CorrectAnswerIndex];
         BootImg.sprite = BootCols[CorrectAnswerIndex];
@@ -54,6 +55,7 @@ public class ParentsCornerActivation : MonoBehaviour {
             {
                 IMGRef[i].color = Unlocked;
             }
+            Unlock.GetComponent<MyIAPManager>().BuyNonConsumable();
         }
     }
 

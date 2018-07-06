@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -72,10 +72,12 @@
     <Compile Include="Assets\Scripts\InteractiveSection_Manager.cs" />
     <Compile Include="Assets\Scripts\InteractiveSection_Movement.cs" />
     <Compile Include="Assets\Scripts\MyIAPManager.cs" />
+    <Compile Include="Assets\Scripts\MyStoreClass.cs" />
     <Compile Include="Assets\Scripts\ParentsCorner_Manager.cs" />
     <Compile Include="Assets\Scripts\ParentsCornerActivation.cs" />
     <Compile Include="Assets\Scripts\ResultScreen_ButtonShake.cs" />
     <Compile Include="Assets\Scripts\ResultScreen_Manager.cs" />
+    <Compile Include="Assets\Scripts\Scaler.cs" />
     <Compile Include="Assets\Scripts\SpeakerAnimation.cs" />
     <Compile Include="Assets\Scripts\StateChanger.cs" />
     <Reference Include="UnityEditor.StandardEvents">

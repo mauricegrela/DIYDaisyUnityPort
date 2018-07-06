@@ -61,7 +61,7 @@ public class ImageAnimator : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        SFXSource.Play();
+        //SFXSource.Play();
         SFXSource.loop = false;
 
         isAnimating = false;
