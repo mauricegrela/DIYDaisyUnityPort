@@ -21,7 +21,13 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     // kProductIDSubscription - it has custom Apple and Google identifiers. We declare their store-
     // specific mapping to Unity Purchasing's AddProduct, below.
     public static string kProductIDConsumable = "consumable";
+
     public static string kProductIDNonConsumable = "com.imaginecreatemedia.daisy.StickerSet";
+
+
+
+
+
     public static string kProductIDSubscription = "subscription";
 
     // Apple App Store-specific product identifier for the subscription product.
@@ -30,15 +36,38 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
     // Google Play Store-specific product identifier subscription product.
     private static string kProductNameGooglePlaySubscription = "com.unity3d.subscription.original";
 
+    private INIParser ini;
+    private TextAsset asset;
+    public ParentsCornerActivation Unlock;
+
+    public Canvas debugtest;
+
+
+
     void Start()
     {
+        /*if (Application.platform == RuntimePlatform.Android)
+        {
+        kProductIDNonConsumable = "com.imaginecreatemedia.daisy.stickerset";
+        }*/
         // If we haven't set up the Unity Purchasing reference
+
         if (m_StoreController == null)
-        { }
-            // Begin to configure our connection to Purchasing
-            InitializePurchasing();
-        
+        {
+        // Begin to configure our connection to Purchasing
+        InitializePurchasing();
+        }
+
+        int HasPurchased = PlayerPrefs.GetInt("IsPurchased",0);
+
+        if(HasPurchased == 1)
+        {
+        Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+        //debugtest.enabled = false;
+        }
     }
+
+
 
     public void InitializePurchasing()
     {
@@ -65,6 +94,9 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
                 { kProductNameAppleSubscription, AppleAppStore.Name },
                 { kProductNameGooglePlaySubscription, GooglePlay.Name },
             });
+
+
+
 
         // Kick off the remainder of the set-up with an asynchrounous call, passing the configuration 
         // and this class' instance. Expect a response either in OnInitialized or OnInitializeFailed.
@@ -121,6 +153,15 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
                 // ... buy the product. Expect a response either through ProcessPurchase or OnPurchaseFailed 
                 // asynchronously.
                 m_StoreController.InitiatePurchase(product);
+                // ... Store the purchase in the INI
+                //ini.Open(asset);
+                //int score = ini.ReadValue("Player", "Score", 10);
+                //score += 100;
+                //ini.WriteValue("IAP", "Purchase", true);
+                //ini.Close();
+
+
+
             }
             // Otherwise ...
             else
@@ -174,8 +215,8 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
             // We are not running on an Apple device. No work is necessary to restore purchases.
             Debug.Log("RestorePurchases FAIL. Not supported on this platform. Current = " + Application.platform);
         }
-    }*/
-
+    }
+    */
 
     //  
     // --- IStoreListener
@@ -190,8 +231,39 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         m_StoreController = controller;
         // Store specific subsystem, for accessing device-specific store features.
         m_StoreExtensionProvider = extensions;
+
+        extensions.GetExtension<IAppleExtensions>().RestoreTransactions(result => {
+            if (result)
+            {
+                // This does not mean anything was restored,
+                // merely that the restoration process succeeded.
+                Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+            }
+            else
+            {
+                // Restoration failed.
+            }
+        });
+
     }
 
+    public void RestoreButton()
+    {
+
+        m_StoreExtensionProvider.GetExtension<IAppleExtensions>().RestoreTransactions(result => {
+            if (result)
+            {
+                // This does not mean anything was restored,
+                // merely that the restoration process succeeded.
+                Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+            }
+            else
+            {
+                // Restoration failed.
+            }
+        });
+
+    }
 
     public void OnInitializeFailed(InitializationFailureReason error)
     {
@@ -207,13 +279,15 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // The consumable item has been successfully purchased, add 100 coins to the player's in-game score.
-            //ScoreManager.score += 100;
+           // ScoreManager.score += 100;
         }
         // Or ... a non-consumable product has been purchased by this user.
         else if (String.Equals(args.purchasedProduct.definition.id, kProductIDNonConsumable, StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // TODO: The non-consumable item has been successfully purchased, grant this item to the player.
+            Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+            PlayerPrefs.SetInt("IsPurchased", 1);
         }
         // Or ... a subscription product has been purchased by this user.
         else if (String.Equals(args.purchasedProduct.definition.id, kProductIDSubscription, StringComparison.Ordinal))
@@ -225,6 +299,7 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
         else
         {
             Debug.Log(string.Format("ProcessPurchase: FAIL. Unrecognized product: '{0}'", args.purchasedProduct.definition.id));
+            //Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
         }
 
         // Return a flag indicating whether this product has completely been received, or if the application needs 

@@ -43,9 +43,9 @@ public class ParentsCornerActivation : MonoBehaviour {
     {
         Debug.Log(InputRef.text.ToLower() +"///////"+ BootColNames[CorrectAnswerIndex]);
         if(InputRef.text.ToLower() == BootColNames[CorrectAnswerIndex])
-        {
+        {//If the correct answer is input
             gameObject.SetActive(false);
-            for (int i = 0; i <= Locks.Length - 1; i++)
+            /*for (int i = 0; i <= Locks.Length - 1; i++)
             {
                 Locks[i].SetActive(false);
 
@@ -54,9 +54,25 @@ public class ParentsCornerActivation : MonoBehaviour {
             for (int i = 0; i <= IMGRef.Length - 1; i++)
             {
                 IMGRef[i].color = Unlocked;
-            }
+            }*/
             Unlock.GetComponent<MyIAPManager>().BuyNonConsumable();
         }
+    }
+
+    public void UnlockGame()
+    {
+        gameObject.SetActive(false);
+        for (int i = 0; i <= Locks.Length - 1; i++)
+        {
+            Locks[i].SetActive(false);
+
+        }
+
+        for (int i = 0; i <= IMGRef.Length - 1; i++)
+        {
+            IMGRef[i].color = Unlocked;
+        }
+        //Unlock.GetComponent<MyIAPManager>().BuyNonConsumable();
     }
 
 }

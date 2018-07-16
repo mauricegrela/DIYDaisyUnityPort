@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Advanced INI Parser\INIParser.cs" />
     <Compile Include="Assets\CaptureAndSave\Example\CaptureAndSaveScreen.cs" />
     <Compile Include="Assets\CaptureAndSave\Example\PreviewAndSave.cs" />
     <Compile Include="Assets\Scripts\CharacterCreationScript.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\MyStoreClass.cs" />
     <Compile Include="Assets\Scripts\ParentsCorner_Manager.cs" />
     <Compile Include="Assets\Scripts\ParentsCornerActivation.cs" />
+    <Compile Include="Assets\Scripts\RestorePurchaseButton.cs" />
     <Compile Include="Assets\Scripts\ResultScreen_ButtonShake.cs" />
     <Compile Include="Assets\Scripts\ResultScreen_Manager.cs" />
     <Compile Include="Assets\Scripts\Scaler.cs" />
