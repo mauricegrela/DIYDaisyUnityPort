@@ -237,7 +237,7 @@ public class MyIAPManager : MonoBehaviour, IStoreListener
             {
                 // This does not mean anything was restored,
                 // merely that the restoration process succeeded.
-                Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
+                //Unlock.GetComponent<ParentsCornerActivation>().UnlockGame();
             }
             else
             {
